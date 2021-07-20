@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const Globals = createGlobalStyle`
   :root {
@@ -14,9 +14,10 @@ const Globals = createGlobalStyle`
     --veryPaleRed: hsl(13, 100%, 96%);
     --veryLightGray: hsl(0, 0%, 98%);
     /* radius */
-    --mainRadius: 1rem;
+    --mainRadius: 5rem;
     /* shadows */
-    --mainShadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, .1);
+    --mainShadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, .2);
+    --activeShadow: 0.1rem 0.3rem 1rem hsla(12, 88%, 59%, .5);
     /* transitions */
     --mainTransition: all 0.3s ease-in-out;
     /* font sizes */
@@ -26,7 +27,7 @@ const Globals = createGlobalStyle`
     --md: 3rem;
     --sm: 2.5rem;
     --xs: 2rem;
-    --xxs: 1.7rem;
+    --xxs: 1.6rem;
   }
 
   *,
