@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 import logo from '../images/logo.svg';
-import { sectionSpacingSm, maxWidthLg } from '../abstracts/Mixins';
+import { maxWidthLg } from '../abstracts/Mixins';
 import NavLink from './NavLink';
 import Button from './styledElements/Button';
 
 const Nav = styled.nav`
   position: fixed;
   width: 100%;
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
 `;
 
 const Container = styled.div`
-  ${sectionSpacingSm}
+  padding: 2rem;
   ${maxWidthLg}
   display: flex;
   align-items: center;
@@ -42,6 +43,7 @@ const Navbar = () => {
         </ul>
         <Button primary>Get Started</Button>
       </Container>
+      <div className='blur'></div>
     </Nav>
   );
 };
