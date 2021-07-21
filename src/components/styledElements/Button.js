@@ -25,6 +25,13 @@ const Button = styled.a`
       background-color: var(--brightRed);
       color: var(--white);
     `}
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      background-color: var(--white);
+      color: var(--brightRed);
+    `}
 `;
 
 export default Button;

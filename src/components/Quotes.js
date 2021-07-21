@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import {
   maxWidthLg,
   headingStyles,
-  sectionSpacingLg,
+  sectionSpacingMd,
 } from '../abstracts/Mixins';
 import Carousel from './Carousel';
 import Button from './styledElements/Button';
 
 const Container = styled.div`
   ${maxWidthLg}
-  ${sectionSpacingLg}
+  ${sectionSpacingMd}
   text-align: center;
 
   .quotes-header {

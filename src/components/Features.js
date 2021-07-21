@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {
   maxWidthLg,
-  sectionSpacingLg,
+  sectionSpacingMd,
   headingStyles,
   textStyles,
 } from '../abstracts/Mixins';
@@ -19,7 +19,7 @@ const BgPatternFeatures = styled.div`
 
 const Container = styled.div`
   ${maxWidthLg}
-  ${sectionSpacingLg}
+  ${sectionSpacingMd}
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;

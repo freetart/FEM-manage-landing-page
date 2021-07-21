@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Quotes from './components/Quotes';
+import Banner from './components/Banner';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <main>
         <Features />
         <Quotes />
+        <Banner />
       </main>
     </>
   );
