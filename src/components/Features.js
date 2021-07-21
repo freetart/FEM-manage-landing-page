@@ -9,7 +9,7 @@ import Feature from './Feature';
 import { featuresData } from '../data';
 
 const BgPatternFeatures = styled.div`
-  clip-path: circle(29.2% at 0 65%);
+  clip-path: circle(28% at 0 44%);
   background-color: var(--brightRed);
   height: 100%;
   width: 100%;
