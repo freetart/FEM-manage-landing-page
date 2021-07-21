@@ -43,7 +43,6 @@ const Navbar = () => {
         </ul>
         <Button primary>Get Started</Button>
       </Container>
-      <div className='blur'></div>
     </Nav>
   );
 };

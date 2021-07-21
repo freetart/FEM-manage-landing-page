@@ -8,7 +8,7 @@ import {
 import heroImg from '../images/illustration-intro.svg';
 import Button from './styledElements/Button';
 
-const BgPattern = styled.div`
+const BgPatternHero = styled.div`
   clip-path: circle(50% at 100% 0);
   background-color: var(--brightRed);
   height: 100%;
@@ -40,7 +40,7 @@ const Container = styled.div`
 const Hero = () => {
   return (
     <header>
-      <BgPattern></BgPattern>
+      <BgPatternHero />
       <Container>
         <div className='hero-info'>
           <h1 className='hero-heading'>
