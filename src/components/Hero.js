@@ -56,16 +56,23 @@ const Hero = () => {
       <BgPatternHero />
       <Container>
         <div className='hero-info'>
-          <h1 className='hero-heading'>
+          <h1 className='hero-heading' data-aos='fade-up'>
             Bring everyone together to build better products.
           </h1>
-          <p className='hero-lead'>
+          <p className='hero-lead' data-aos='fade-up' data-aos-delay='100'>
             Manage makes it simple for software teams to plan day-to-day tasks
             while keeping the larger team goals in view.
           </p>
-          <Button primary>Get Started</Button>
+          <Button primary data-aos='fade-up' data-aos-delay='200'>
+            Get Started
+          </Button>
         </div>
-        <img src={heroImg} alt='illustration of charts' className='hero-img' />
+        <img
+          src={heroImg}
+          alt='illustration of charts'
+          className='hero-img'
+          data-aos='fade-left'
+        />
       </Container>
     </header>
   );

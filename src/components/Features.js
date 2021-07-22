@@ -51,14 +51,16 @@ const Features = () => {
       <BgPatternFeatures />
       <Container>
         <div>
-          <h2 className='features-heading'>What’s different about Manage?</h2>
-          <p className='features-lead'>
+          <h2 className='features-heading' data-aos='fade-up'>
+            What’s different about Manage?
+          </h2>
+          <p className='features-lead' data-aos='fade-up' data-aos-delay='100'>
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
             teams.
           </p>
         </div>
-        <div>
+        <div data-aos='fade-down'>
           {featuresData.map((feature) => {
             const { id, number, title, description } = feature;
             return (

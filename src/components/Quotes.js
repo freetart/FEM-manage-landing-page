@@ -34,7 +34,7 @@ const Container = styled.div`
 
 const Quotes = () => {
   return (
-    <section>
+    <section data-aos='fade-up'>
       <Container>
         <h2 className='quotes-header'>What they've said</h2>
         <Carousel />
