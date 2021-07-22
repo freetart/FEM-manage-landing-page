@@ -9,6 +9,7 @@ site: https://fem-manage-landing-page-challenge.netlify.app/
 - carousel
 - email input validation
 - preloader
+- dynamic local data for features & quotes section
 - mobile menu & mobile menu toggle
 - responsive design
 - animated content on scroll
