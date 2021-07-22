@@ -4,6 +4,7 @@ import { maxWidthLg } from '../abstracts/Mixins';
 import NavLink from './NavLink';
 import Button from './styledElements/Button';
 import Responsive from '../abstracts/Responsive';
+import MenuToggle from './MenuToggle';
 
 const Nav = styled.nav`
   position: fixed;
@@ -40,7 +41,7 @@ const Container = styled.div`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ isActive, setIsActive }) => {
   return (
     <Nav>
       <Container>
@@ -55,6 +56,7 @@ const Navbar = () => {
         <Button primary className='btn'>
           Get Started
         </Button>
+        <MenuToggle isActive={isActive} setIsActive={setIsActive} />
       </Container>
     </Nav>
   );
