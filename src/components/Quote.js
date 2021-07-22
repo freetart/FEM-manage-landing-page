@@ -7,7 +7,6 @@ import {
 
 const Container = styled.div`
   ${sectionSpacingSm}
-  padding: 10rem;
   cursor: grab;
 
   &:active {

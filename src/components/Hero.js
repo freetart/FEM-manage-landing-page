@@ -2,11 +2,13 @@ import styled from 'styled-components';
 import {
   maxWidthLg,
   sectionSpacingLg,
+  sectionSpacingMd,
   headingStyles,
   textStyles,
 } from '../abstracts/Mixins';
 import heroImg from '../images/illustration-intro.svg';
 import Button from './styledElements/Button';
+import Responsive from '../abstracts/Responsive';
 
 const BgPatternHero = styled.div`
   clip-path: circle(50% at 100% 0);
@@ -23,6 +25,17 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+
+  ${Responsive.md`
+    grid-template-columns: 1fr; 
+    ${sectionSpacingMd}
+  `}
+
+  .hero-info {
+    ${Responsive.md`
+      margin-bottom: 2rem; 
+    `}
+  }
 
   .hero-heading {
     ${headingStyles}

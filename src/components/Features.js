@@ -4,9 +4,11 @@ import {
   sectionSpacingMd,
   headingStyles,
   textStyles,
+  sectionSpacingSm,
 } from '../abstracts/Mixins';
 import Feature from './Feature';
 import { featuresData } from '../data';
+import Responsive from '../abstracts/Responsive';
 
 const BgPatternFeatures = styled.div`
   clip-path: circle(28% at 0 44%);
@@ -23,6 +25,11 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
+
+  ${Responsive.md`
+    grid-template-columns: 1fr;
+    ${sectionSpacingSm}
+  `}
 
   .features-heading {
     ${headingStyles};

@@ -4,6 +4,7 @@ import Socials from './Socials';
 import FooterLink from './FooterLink';
 import SignUpEmail from './SignUpEmail';
 import { maxWidthLg, sectionSpacingSm, textStyles } from '../abstracts/Mixins';
+import Responsive from '../abstracts/Responsive';
 
 const Container = styled.div`
   ${maxWidthLg}
@@ -11,6 +12,15 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
+
+  ${Responsive.lg`
+    grid-template-columns: repeat(3, 1fr);
+  `}
+
+  ${Responsive.md`
+    grid-template-columns: 1fr; 
+  `}
+
 
   .footer-logo {
     width: 20rem;
