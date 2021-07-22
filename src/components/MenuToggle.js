@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import Responsive from '../abstracts/Responsive';
+import styled from "styled-components";
+import { FaBars, FaTimes } from "react-icons/fa";
+import Responsive from "../abstracts/Responsive";
 
 const Button = styled.button`
   display: none;
@@ -17,18 +17,18 @@ const Button = styled.button`
   `}
 
   .toggle-icon {
-    color: var(--black);
+    color: var(--darkBlue);
     font-size: var(--md);
   }
 `;
 
 const MenuToggle = ({ isActive, setIsActive }) => {
   return (
-    <Button className='toggle' onClick={() => setIsActive(!isActive)}>
+    <Button className="toggle" onClick={() => setIsActive(!isActive)}>
       {!isActive ? (
-        <FaBars className='toggle-icon' />
+        <FaBars className="toggle-icon" />
       ) : (
-        <FaTimes className='toggle-icon' />
+        <FaTimes className="toggle-icon" />
       )}
     </Button>
   );
