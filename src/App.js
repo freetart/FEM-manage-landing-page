@@ -9,6 +9,7 @@ import Quotes from './components/Quotes';
 import Cta from './components/Cta';
 import Footer from './components/Footer';
 import Tag from './components/Tag';
+import MobileMenu from './components/MobileMenu';
 
 const App = () => {
   const [isActive, setIsActive] = useState(false);
@@ -18,6 +19,7 @@ const App = () => {
     <>
       <Globals />
       <Navbar isActive={isActive} setIsActive={setIsActive} />
+      <MobileMenu isActive={isActive} />
       <Hero />
       <main>
         <Features />
