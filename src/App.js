@@ -3,7 +3,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Quotes from './components/Quotes';
-import Banner from './components/Banner';
+import Cta from './components/Cta';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
       <main>
         <Features />
         <Quotes />
-        <Banner />
+        <Cta />
       </main>
+      <Footer />
     </>
   );
 };

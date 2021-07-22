@@ -8,6 +8,11 @@ import {
 const Container = styled.div`
   ${sectionSpacingSm}
   padding: 10rem;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
 
   .quote-portrait {
     width: 10rem;
